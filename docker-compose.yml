@@ -1,0 +1,9 @@
+version: '3'
+services:
+    electrumx-qtum:
+      build: .
+      ports: 
+        - "50001:50001"
+      environment:
+        - 'DAEMON_URL=http://user:pass@host:port'
+        - 'COIN=QTUM'
