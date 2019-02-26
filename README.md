@@ -16,7 +16,7 @@ docker run \
   -e DAEMON_URL=http://user:pass@host:port \
   -e COIN=QTUM \
   -p 50002:50002 \
-  skywills87/electrumx
+  skywills87/electrumx-qtum
 ```
 
 If there's an SSL certificate/key (`electrumx.crt`/`electrumx.key`) in the `/data` volume it'll be used. If not, one will be generated for you.
@@ -37,7 +37,7 @@ docker run \
   -e DAEMON_URL=http://user:pass@host:port \
   -e COIN=QTUM \
   -p 50002:50002 \
-  skywills87/electrumx:v1.8.12
+  skywills87/electrumx-qtum:v1.8.12
 ```
 
 ## License
